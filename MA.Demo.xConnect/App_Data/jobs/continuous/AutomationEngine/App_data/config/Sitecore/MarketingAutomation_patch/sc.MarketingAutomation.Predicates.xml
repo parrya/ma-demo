@@ -1,0 +1,18 @@
+﻿<Settings>
+    <Sitecore>
+        <XConnect>
+        <Services>
+            <DescriptorLocator>
+            <Options>
+                <PredicateDescriptors>
+                    <RandomSplit>
+                        <id>{8A352B1D-86D4-4781-8B37-FB1E92EB93AC}</id>
+                        <type>MA.Demo.Sitecore.Predicates.RandomFiftyFifty, MA.Demo.Sitecore</type>
+                    </RandomSplit>
+                </PredicateDescriptors>
+            </Options>
+            </DescriptorLocator>
+        </Services>
+        </XConnect>
+    </Sitecore>
+</Settings>

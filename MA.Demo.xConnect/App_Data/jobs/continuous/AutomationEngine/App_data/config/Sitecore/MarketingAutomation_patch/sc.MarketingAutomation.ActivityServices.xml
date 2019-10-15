@@ -1,0 +1,22 @@
+﻿<Settings>
+<!--
+    Marketing Automation Activity Services configuration
+-->
+<Sitecore>
+    <XConnect>
+    <MarketingAutomation>
+        <Engine>
+        <Services>        
+			    <MA.Demo.Sitecore.SmsService>
+            <!-- Implementation class: -->
+            <Type>MA.Demo.Sitecore.Services.SmsService, MA.Demo.Sitecore</Type>
+            <!-- Interface: -->
+            <As>MA.Demo.Sitecore.Services.ISmsService, MA.Demo.Sitecore</As>
+            <LifeTime>Transient</LifeTime>
+          </MA.Demo.Sitecore.SmsService>
+        </Services>
+        </Engine>
+    </MarketingAutomation>
+    </XConnect>
+</Sitecore>
+</Settings>

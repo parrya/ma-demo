@@ -1,0 +1,21 @@
+﻿<Settings>
+  <!--
+    Marketing Automation activity type registrations.
+  -->
+  <Sitecore>
+    <XConnect>
+      <Services>
+        <MA.Demo.Activity.SendSmsMessageActivity>
+          <Type>Sitecore.Xdb.MarketingAutomation.Locator.ActivityTypeRegistration, Sitecore.Xdb.MarketingAutomation</Type>
+          <LifeTime>Singleton</LifeTime>
+          <Options>
+            <!-- ID must match the item Id of your custom Activity Type descriptor in /sitecore/system/Settings/Analytics/Marketing Automation/Activity Types/ -->
+            <Id>{7668D457-31F4-4190-8497-D9408005FAA5}</Id>
+            <!-- The assembly reference to access your custom Activity Type code -->
+            <ImplementationType>MA.Demo.Sitecore.Activities.SendSmsMessageActivity, MA.Demo.Sitecore</ImplementationType>
+          </Options>
+        </MA.Demo.Activity.SendSmsMessageActivity>		
+      </Services>
+    </XConnect>
+  </Sitecore>
+</Settings>
