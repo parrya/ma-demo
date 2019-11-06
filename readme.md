@@ -1,33 +1,34 @@
-#ma-demo
+# ma-demo
 
-##Purpose
-This project provides sample code, utilities, and Sitecore items to demonstrate how to extend Sitecore's Marketing Automation with custom Activity Types. 
+## Purpose
+This project provides sample code, utilities, and Sitecore items to demonstrate how to extend Sitecore's Marketing Automation with custom Activity Types.
+
 It contains the front end Angular code, .NET code and Sitecore items to deploy a custom Activity Type that sends an SMS via Twilio.
 
-##Pre-requisites
+## Pre-requisites
 - your own Twilio account and API key
 - Sitecore 9.1 or later and a Sitecore license
 - Node
 - npm
 - Visual Studio 2017 or later
 
-##Contents
-###MA.Demo.Sitecore
+## Contents
+### MA.Demo.Sitecore
 This contains the main solution file, config files, and .NET Code for the Activity Type class, the Predicate class, and the SMS sending service.
 
-###MA.Demo.UI
+### MA.Demo.UI
 Contains the Angular code necessary to build the SendSMS Activity Type JavaScript plugin class for deployment to Sitecore
 
-###MA.Demo.xConnect
+### MA.Demo.xConnect
 Contains the configuration patch files and Twillio app settings for the Marketing Automation engine.
 
-###MA.Demo.xConnect.Utils
+### MA.Demo.xConnect.Utils
 This is a console app which can be used to create some xDB contacts for testing, update Personal Info and Phone Number facets, and submit an interaction against a contact to xConnect with the intention of enrolling a contact in a Marketing Automation plan.
 
-##Installation
+## Installation
 Firstly install the pre-requisites listed above.
 
-###Front end (activity editor)
+### Front end (activity editor)
 - from the command prompt or shell, navigate to the MA.Demo.UI/SendSmsMessage folder
 - run *npm install*
 - run *npm run dev* to build the front end solution
@@ -37,21 +38,21 @@ Firstly install the pre-requisites listed above.
 - copy the plugin to the *\sitecore\shell\client\Applications\MarketingAutomation\plugins* folder in your Sitecore webroot
 - if you cannot get it to build and there's no Front End wizards around, you can deploy the plugin JS file from the Sitecore solution and still be able to run the demo
 
-###.NET code (Activity Type class)
+### .NET code (Activity Type class)
 - Build the VS solution.
 - Deploy the built files and configs to your Sitecore webroot (this will be the DLL, the plugin config, and the plugin JS (if you want to)
 
-###Automation Engine
+### Automation Engine
 In a local XP0 install, the Automation Engine will be in your xConnect webroot in subfolder *\App_Data\jobs\continuous\AutomationEngine*  (the engine root)
 First, turn off your Automation Engine service from the Services control panel, otherwise the DLLs will not copy across.
 You will need to deploy the following to the engine root:
 - MA.Demo.Sitecore.dll
 - the MarketingAutomation_patch files to: *\App_Data\Config\sitecore*
 
-###Sitecore
+### Sitecore
 Install the package.
 
-###xConnect Utils
+### xConnect Utils
 - Find the thumbprint for you xConnect client certificate and install it. 
 OR, disable client certificates by commenting out the lines in your xConnect *App_Config\AppSettings.config* file:
 
@@ -60,7 +61,7 @@ OR, disable client certificates by commenting out the lines in your xConnect *Ap
 
 When you browse to the OData API you will be asked for a certificate. Just click escape or cancel and it will load after that.
 
-##To use
+## To use
 - configure your Twillio settings
 - Create a marketing Automation plan
 - PROFIT
