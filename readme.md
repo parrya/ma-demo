@@ -25,6 +25,9 @@ Contains the configuration patch files and Twillio app settings for the Marketin
 ### MA.Demo.xConnect.Utils
 This is a console app which can be used to create some xDB contacts for testing, update Personal Info and Phone Number facets, and submit an interaction against a contact to xConnect with the intention of enrolling a contact in a Marketing Automation plan.
 
+### sitecore-packages
+Packaged Sitecore items for SMS Activity Type descriptor and sample Predicate class.
+
 ## Installation
 Firstly install the pre-requisites listed above.
 
@@ -56,8 +59,10 @@ Install the package.
 - Find the thumbprint for you xConnect client certificate and install it. 
 OR, disable client certificates by commenting out the lines in your xConnect *App_Config\AppSettings.config* file:
 
+```
 <!-- <add key="AllowInvalidClientCertificates" value="false" /> -->
 <!-- <add key="validateCertificateThumbprint" value="your thumbprint" /> -->
+```
 
 When you browse to the OData API you will be asked for a certificate. Just click escape or cancel and it will load after that.
 
