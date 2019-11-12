@@ -8,6 +8,7 @@ It contains the front end Angular code, .NET code and Sitecore items to deploy a
 ## Pre-requisites
 - your own Twilio account and API key
 - Sitecore 9.1 or later and a Sitecore license
+- local file system access to the path <webroot>/sitecore/shell/client/Applications/MarketingAutomation/packages/ma-core
 - Node
 - npm
 - Visual Studio 2017 or later
@@ -34,6 +35,7 @@ Firstly install the pre-requisites listed above.
 ### Front end (activity editor)
 - from the command prompt or shell, navigate to the MA.Demo.UI/SendSmsMessage folder
 - run *npm install*
+- edit package.json and update line 20 with the path to your local Sitecore instance. This will be necessary for importing the Sitecore specific modules, without which your build will fail.
 - run *npm run dev* to build the front end solution
 - if you get an error on rimraf, install it using the -g global parameter and the specific version listed in the package.json
 - any other errors are likely to be package related or folder permissions on the output folder (e.g. readonly).
