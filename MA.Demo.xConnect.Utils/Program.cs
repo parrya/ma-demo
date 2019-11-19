@@ -228,7 +228,6 @@ namespace MA.Demo.Xconnect.Utils
                     {
                         var personalInfoFacet = contact.GetFacet<PersonalInformation>(personalInfoFacetKey);
 
-                        //Am assuming that later we might not replace the entire facet in one go, so we just update the bits we need.
                         if (personalInfoFacet != null)
                         {
                             // Change facet properties
@@ -250,7 +249,6 @@ namespace MA.Demo.Xconnect.Utils
                             client.SetFacet(contact, newFacet);
                         }
 
-                        //Do the business
                         await client.SubmitAsync();
                     }
 
@@ -286,7 +284,6 @@ namespace MA.Demo.Xconnect.Utils
                     {
                         var phoneFacet = contact.GetFacet<PhoneNumberList>(phoneNumberFacetKey);
 
-                        //Am assuming that later we might not replace the entire facet in one go, so we just update the bits we need.
                         if (phoneFacet != null)
                         {
                             // Change facet properties
@@ -303,7 +300,6 @@ namespace MA.Demo.Xconnect.Utils
                             client.SetFacet(contact, newPhoneFacet);
                         }
 
-                        //Do the business
                         await client.SubmitAsync();
                     }
 
