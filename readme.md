@@ -44,6 +44,7 @@ Firstly install the pre-requisites listed above.
 - if you cannot get it to build and there's no Front End wizards around, you can deploy the plugin JS file from the Sitecore solution and still be able to run the demo
 
 ### .NET code (Activity Type class)
+- Restore nuget packages.
 - Build the VS solution.
 - Deploy the built files and configs to your Sitecore webroot (this will be the DLL, the plugin config, and the plugin JS (if you want to)
 
