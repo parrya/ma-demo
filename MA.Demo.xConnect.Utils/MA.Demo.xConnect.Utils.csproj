@@ -254,11 +254,5 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Peet.xDB.Extensions\Peet.xDB.Extensions.csproj">
-      <Project>{9BECBDDE-AD86-42A5-8EDF-F6A884C36503}</Project>
-      <Name>Peet.xDB.Extensions</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
