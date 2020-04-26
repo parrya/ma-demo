@@ -73,7 +73,7 @@
     <Content Include="App_Data\jobs\continuous\AutomationEngine\App_data\config\Sitecore\MarketingAutomation_patch\sc.MarketingAutomation.Predicates.xml">
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="Web.config" />
+    <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />

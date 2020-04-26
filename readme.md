@@ -44,6 +44,7 @@ Firstly install the pre-requisites listed above.
 - if you cannot get it to build and there's no Front End wizards around, you can deploy the plugin JS file from the Sitecore solution and still be able to run the demo
 
 ### .NET code (Activity Type class)
+- Restore nuget packages.
 - Build the VS solution.
 - Deploy the built files and configs to your Sitecore webroot (this will be the DLL, the plugin config, and the plugin JS (if you want to)
 
@@ -52,6 +53,7 @@ In a local XP0 install, the Automation Engine will be in your xConnect webroot i
 First, turn off your Automation Engine service from the Services control panel, otherwise the DLLs will not copy across.
 You will need to deploy the following to the engine root:
 - MA.Demo.Sitecore.dll
+- Twilio.dll
 - the MarketingAutomation_patch files to: *\App_Data\Config\sitecore*
 
 ### Sitecore
@@ -72,14 +74,3 @@ When you browse to the OData API you will be asked for a certificate. Just click
 - configure your Twillio settings
 - Create a marketing Automation plan
 - PROFIT
-
-
-
-
-
-
-
-
-
-
-
