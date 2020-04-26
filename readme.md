@@ -53,6 +53,7 @@ In a local XP0 install, the Automation Engine will be in your xConnect webroot i
 First, turn off your Automation Engine service from the Services control panel, otherwise the DLLs will not copy across.
 You will need to deploy the following to the engine root:
 - MA.Demo.Sitecore.dll
+- Twilio.dll
 - the MarketingAutomation_patch files to: *\App_Data\Config\sitecore*
 
 ### Sitecore
