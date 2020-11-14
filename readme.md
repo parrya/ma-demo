@@ -75,13 +75,6 @@ When you browse to the OData API you will be asked for a certificate. Just click
 - Create a marketing Automation plan
 - PROFIT
 
+## Troubleshooting
 
-
-
-
-
-
-
-
-
-
+https://andypaz.com/2019/11/11/troubleshooting-custom-activity-types-and-marketing-automation/
