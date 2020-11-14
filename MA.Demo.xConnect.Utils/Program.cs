@@ -220,7 +220,7 @@ namespace MA.Demo.Xconnect.Utils
                     string personalInfoFacetKey = PersonalInformation.DefaultFacetKey;
 
                     // Pass the facet name into the ContactExpandOptions constructor
-                    var contactTask = client.GetAsync<Contact>(reference, new ContactExpandOptions(personalInfoFacetKey));
+                    var contactTask = client.GetAsync(reference, new ContactExecutionOptions(new ContactExpandOptions(personalInfoFacetKey)));
 
                     contact = await contactTask;
 
@@ -276,7 +276,8 @@ namespace MA.Demo.Xconnect.Utils
                     string phoneNumberFacetKey = PhoneNumberList.DefaultFacetKey;
 
                     // Pass the facet name into the ContactExpandOptions constructor
-                    var contactTask = client.GetAsync<Contact>(reference, new ContactExpandOptions(phoneNumberFacetKey));
+                    var contactTask = client.GetAsync(reference, new ContactExecutionOptions(new ContactExpandOptions(phoneNumberFacetKey)));
+
 
                     contact = await contactTask;
 
@@ -328,7 +329,8 @@ namespace MA.Demo.Xconnect.Utils
                     string personalInfoFacetKey = PersonalInformation.DefaultFacetKey;
 
                     // Get the contact and PersonalInfo facet
-                    var contactTask = client.GetAsync<Contact>(reference, new ContactExpandOptions(personalInfoFacetKey));
+                    var contactTask = client.GetAsync(reference, new ContactExecutionOptions(new ContactExpandOptions(personalInfoFacetKey)));
+
 
                     contact = await contactTask;
 
@@ -367,7 +369,7 @@ namespace MA.Demo.Xconnect.Utils
                     string personalInfoFacetKey = PersonalInformation.DefaultFacetKey;
 
                     // Pass the facet name into the ContactExpandOptions constructor
-                    var contactTask = client.GetAsync<Contact>(reference, new ContactExpandOptions(personalInfoFacetKey));
+                    var contactTask = client.GetAsync(reference, new ContactExecutionOptions(new ContactExpandOptions(personalInfoFacetKey)));
 
                     contact = await contactTask;
 
